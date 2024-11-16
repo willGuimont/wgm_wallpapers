@@ -1,8 +1,7 @@
 .PHONY: install
 install:
 	python3 -m venv .venv
-	. .venv/bin/activate
-	pip install -r requirements.txt
+	. .venv/bin/activate && pip install -r requirements.txt
 	sudo mkdir -p /opt/wgm_wallpapers
 	sudo cp requirements.txt /opt/wgm_wallpapers
 	sudo cp wallpapers.py /opt/wgm_wallpapers

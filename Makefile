@@ -10,7 +10,7 @@ install:
 
 .PHONY: run
 run:
-	. .venv/bin/activate && python wallpapers.py
+	. .venv/bin/activate && python3 wallpapers.py
 
 .PHONY: uninstall
 uninstall:
